@@ -1,0 +1,25 @@
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../static/CSS/blog.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&display=swap');</style>
+</head>
+<body>
+    <div id = "MyBlog">
+        <h1><a href="/">My Blog</a></h1>
+    </div>
+        {% for post in blog_posts %}
+            <div id = "post">
+                <p>published: {{post.publish_date}}</p>
+                <h2><a href = "#">{{post.title}}</a></h2>
+                <p>{{post.text}}</p>
+                <p>{{post.author}}</p>
+            </div>
+        {% endfor %}
+</body>
+</html>

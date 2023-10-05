@@ -1,0 +1,24 @@
+body{
+    background: #333333;
+}
+
+#MyBlog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gabarito', cursive;
+}
+
+#post {
+    color: #90EE90;
+    background: #333333;
+    border-radius: 30px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Gabarito', cursive;
+    text-shadow: 1px 1px 5px black;
+}
+#post h2 a{
+    color: #90EE90;
+}
