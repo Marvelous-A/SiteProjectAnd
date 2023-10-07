@@ -10,9 +10,10 @@
     <style>@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&display=swap');</style>
 </head>
 <body>
-    <div id = "MyBlog">
-        <h1><a href="/">My Blog</a></h1>
-    </div>
+    <div class = "MyBlog"> <h1><a href="/">My Blog</a></h1> </div>
+
+    <div class = "MyBlog"> <h1><a href="http://127.0.0.1:8000/admin">Admin</a></h1> </div>
+
         {% for post in blog_posts %}
             <div id = "post">
                 <p>published: {{post.publish_date}}</p>

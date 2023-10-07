@@ -1,8 +1,4 @@
-body{
-    background: #333333;
-}
-
-#MyBlog {
+.Myblog {
     display: flex;
     align-items: center;
     justify-content: center;
